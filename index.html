@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="ikona.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="autocompleter.css">
+    <title>Wyszukiwarka Google</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="cities.js"></script>
+    <script src="autocompleter.js"></script>
+</head>
+
+<body>
+    <div id="app" :class="{home: this.googleResults === false, results: this.googleResults === true}" >
+        <div id="strona_glowna">
+        <div class="cialo">
+            <div class="naglowek">
+                <div class="naglowek2">
+                    <div class="gorna_belka">
+                        <div class="gorna_belka2">
+                            <div class="element1">
+                                <a class="element1_det" href="#" target="_top">Gmail</a>
+                            </div>
+                            <div class="element1">
+                                <a class="element1_det" href="#" target="_top">Grafika</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gorna_belka3">
+                    <div class="odsylacze">
+                        <div class="odsylacze_det">
+                            <div class="odsylacze_det2">
+                                <a class="aplikacje" aria-label="Aplikacje Google" href="#" role="button" ><img src="kropki.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="gorna_belka4" href="" target="_top">Zaloguj się</a>
+            </div>
+        </div>
+        <div class="logo_sekcja">
+            <div class="logo_sekcja2">
+                <img class="logo" alt="Google" height="92" src="logo.png" width="272">
+            </div>
+        </div>
+
+        <v-autocompleter v-on:enter="googleResults=true"></v-autocompleter>
+
+        <div class="przyciski">
+            <input class="szukanie" type="submit" value="Szukaj w Google">
+            <input class="szukanie" type="submit" value="Szczęśliwy traf">
+        </div>
+
+        <div class="klasa"></div>
+
+        <div class="sekcja_przyciski">
+            <div class="sekcja_przyciski1">
+                Polska
+            </div>
+
+            <div class="sekcja_przyciski2">
+                <div class="dolne_elementy1">
+                    <a class="dolne_przyciski" href="#">O nas</a>
+                    <a class="dolne_przyciski" href="#">Reklamuj się</a>
+                    <a class="dolne_przyciski" href="#>">Dla firm</a>
+                    <a class="dolne_przyciski" href="#">Jak działa wyszukiwarka</a>
+                </div>
+                <div class="dolne_elementy2">
+                    <img src="lisc.png">
+                    <a class="dolne_przyciski" href=#>Neutralność węglowa od 2007 roku</a>
+                </div>
+                <div class="dolne_elementy3">
+                    <a class="dolne_przyciski" href="#">Prywatność</a>
+                    <a class="dolne_przyciski" href="#">Warunki</a>
+                    <a class="dolne_przyciski" href="#">Ustawienia</a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <script type="text/javascript">
+        new Vue({ 
+            el: '#app',
+            data: {
+                googleResults: false,
+          },
+        })
+    </script>
+</body>
+</html>
