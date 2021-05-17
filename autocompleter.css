@@ -1,0 +1,149 @@
+.ikona_input-clear,
+.miasta_lista{
+    display: none;
+    line-height: 0.6rem;
+    border-top: 1px solid #dfe1e5;
+    z-index:10;
+    margin-bottom:10px;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    z-index: 10;
+}
+.miasta_lista li{
+    padding:2px 0px;
+    cursor: pointer;
+}
+.nazwy_miast{
+    line-height: 0.7rem;
+    border-top: 1px solid #dfe1e5;
+    z-index:10;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    z-index: 10;
+}
+.nazwy_miast li{
+    cursor: pointer;
+}
+.lista_elementow:hover,.lista_elementow:active, .lista_elementow:focus{
+    font-style: normal;
+    background-color: #dfe1e5;
+    height: 25px;
+}
+.lista_elementow a{
+    text-decoration: none;
+    color:inherit;
+    font-size: 1.1em; 
+}
+.lista_elementow{
+    padding: 3px 0px;
+    cursor: pointer;
+}
+.modul{
+    padding: 5px 19px 0 0;
+    flex: 1;
+    height:100%;
+    display: flex;
+    line-height:normal;
+    justify-content: space-between;
+    align-items: center;
+}
+.czesc{
+    padding: 0px;
+    width:100%;
+    height:44px;
+    display: flex;
+    line-height:normal;
+}
+.input_wyszukiwanie{
+    color: transparent;
+    flex: 100%;
+    width:100%;
+    white-space: pre;
+    height: 38px;
+    padding:0;
+    margin:0;
+    background-color: transparent;
+    border: none;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    font-size: 16px;
+    align-self: flex-end;
+    margin-bottom:6px;
+    font-size: 18px;
+}
+.input_wyszukaj{
+    flex: 100%;
+    width:100%;
+    white-space: pre;
+    height: 38px;
+    padding:0;
+    margin:0;
+    background-color: transparent;
+    border: none;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    font-size: 16px;
+    align-self: flex-end;
+    margin-bottom:6px;
+    font-size: 18px;
+}
+.input_wyszukaj{
+    align-self:center;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+.input_wyszukaj:focus{
+    margin-left: 20px;
+    height:14px;
+    font-size: 17px;
+}
+img.ikona_input{
+    width: 15px;
+    height: 15px;
+    padding-right: 13px;
+    padding-left: 13px;
+    margin-top: 5px;
+}
+img.ikona_input-keyboard{
+    width: 20px;
+    height: 20px;
+    cursor:pointer;
+    padding-right: 0;
+    padding-left:10px;
+    margin-right:0;
+    margin-bottom: 4px;
+}
+img.ikona_input-mikrofon{
+    width: 25px;
+    height: 25px;
+    cursor:pointer;
+    padding-right: 0;
+    padding-left:10px;
+    margin-right:0;
+    margin-bottom: 5px;
+}
+.ikona_input-clear{
+    display: none;
+}
+.ikona_input-keyboard{
+    align-self:center;
+    padding-right: 10px;
+    padding-left: 15px;
+    margin-top: 5px;
+}
+.ikona_input-mikrofon{
+    align-self:center;
+    padding-right: 6px;
+    padding-left: 6px;
+    margin-top: 3px;
+}
+.ikona_input{
+    align-self:center;
+    margin-top: 3px;
+}
+.krzyzyk{
+    display:flex;
+    align-self:center;
+    cursor:pointer;
+    margin:0px;
+}
