@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="ikona.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="autocompleter.css">
+    <title>Wyszukiwarka Google</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="cities.js"></script>
+    <script src="autocompleter.js"></script>
+</head>
+
+<body>
+    <div id="app" :class="{home: this.googleResults === false, results: this.googleResults === true}" >
+        <div id="strona_glowna">
+        <div class="logo_sekcja">
+            <div class="logo_sekcja2">
+                <img class="logo" alt="Google" height="92" src="logo.png" width="272">
+            </div>
+        </div>
+
+        <v-autocompleter v-on:enter="googleResults=true"></v-autocompleter>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        new Vue({ 
+            el: '#app',
+            data: {
+                googleResults: false,
+          },
+        })
+    </script>
+</body>
+</html>
